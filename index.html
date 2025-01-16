@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avati - Login</title>
+
+    <link rel="stylesheet" href="./css/style.css"> <!-- Css style -->
+</head>
+<body>
+
+    <main class="container-main"> 
+        <div class="login-container"> <!-- Loin card -->
+
+            <section class="top-section"> <!-- Top section -->
+                <img src="./public/images/logo.svg" alt="Logo Avati"> <!-- Image logo -->
+            </section> <!-- End top section -->
+
+            <section>  <!-- Middle section -->
+                <div id="resultMessage"></div> <!-- Result menssage -->
+
+                <form id="loginForm"> <!-- Login form -->
+                    <div class="form-group"> <!-- Input email -->
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="ex: exemplo@exemplo.com" required>
+                        <span class="error" id="emailError"></span>
+                    </div>
+                    <div class="form-group"> <!-- Input password -->
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="Digite sua senha" required>
+                        <span class="error" id="passwordError"></span>
+                    </div> 
+                </form> <!-- End login form -->
+
+                <div> <!-- Social media login -->
+                    <a href="#">
+
+                    </a>
+                </div>
+
+                <button type="submit" id="loginButton">Entrar</button> <!-- Login button -->
+            </section> <!-- End middle section -->
+
+        </div> <!-- End login card -->
+    </main>
+
+    <script src="./js/index.js"></script> <!-- JavaScript -->
+</body>
+</html>
