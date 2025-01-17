@@ -1,4 +1,4 @@
-# ✨ Tela de Login Responsiva ✨
+# ✨ Tela de Login ✨
 
 Este projeto apresenta uma **tela de login moderna, responsiva e estilizada**, desenvolvida com **HTML5**, **CSS3** e **JavaScript**. Com foco em uma interface amigável e animações elegantes, é ideal para aplicações web que buscam uma experiência de usuário diferenciada.
 
