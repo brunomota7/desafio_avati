@@ -4,46 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avati - Login</title>
-
-    <link rel="stylesheet" href="./css/style.css"> <!-- Css style -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Css file (Styles.css) -->
 </head>
 <body>
+    <main class="container-main">
+        <div class="login-container">
+            <!-- Logo -->
+            <section class="top-section">
+                <img src="./public/images/logo.svg" alt="Logo Avati" class="logo">
+            </section>
 
-    <main class="container-main"> 
-        <div class="login-container"> <!-- Loin card -->
-
-            <section class="top-section"> <!-- Top section -->
-                <img src="./public/images/logo.svg" alt="Logo Avati"> <!-- Image logo -->
-            </section> <!-- End top section -->
-
-            <section>  <!-- Middle section -->
-                <div id="resultMessage"></div> <!-- Result menssage -->
-
-                <form id="loginForm"> <!-- Login form -->
-                    <div class="form-group"> <!-- Input email -->
+            <!-- Login Form -->
+            <section class="middle-section">
+                <div id="resultMessage"></div> <!-- Result Message -->
+                <form id="loginForm" class="form">
+                    <div class="form-group">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" placeholder="ex: exemplo@exemplo.com" required>
                         <span class="error" id="emailError"></span>
                     </div>
-                    <div class="form-group"> <!-- Input password -->
+                    <div class="form-group input-group">
                         <label for="password">Senha</label>
-                        <input type="password" id="password" placeholder="Digite sua senha" required>
+                        <div class="input-wrapper">
+                            <input type="password" id="password" placeholder="Digite sua senha">
+                            <button type="button" class="toggle-password" aria-label="Mostrar senha">
+                                <img src="./public/icons/eye-off.svg" alt="Mostrar senha" id="eyeIcon">
+                            </button>
+                        </div>
                         <span class="error" id="passwordError"></span>
-                    </div> 
-                </form> <!-- End login form -->
+                    </div>                    
+                    <button type="submit" id="loginButton" class="submit-button" title="Entrar">Entrar</button>
+                    <p class="text-footer">Ainda não possui uma conta? <a href="">Cadastre-se</a></p>
+                </form>
 
-                <div> <!-- Social media login -->
-                    <a href="#">
-
-                    </a>
+                <!-- Social Media Login -->
+                <div class="social-login">
+                    <p class="social-login-text">Ou faça login com:</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <img src="./public/icons/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="./public/icons/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="./public/icons/linkedin.svg" alt="Linkedin">
+                        </a>
+                    </div>
                 </div>
-
-                <button type="submit" id="loginButton">Entrar</button> <!-- Login button -->
-            </section> <!-- End middle section -->
-
-        </div> <!-- End login card -->
+            </section>
+        </div>
     </main>
 
-    <script src="./js/index.js"></script> <!-- JavaScript -->
+    <script src="./js/index.js"></script> <!-- Js file (index.js) -->
 </body>
 </html>
