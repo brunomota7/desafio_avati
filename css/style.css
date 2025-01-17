@@ -218,7 +218,7 @@ button[type="submit"]:hover {
     margin-top: 10px;
     font-size: 0.9em;
     font-weight: 400;
-    text-align: left;
+    text-align: center;
 }
 
 .text-footer a {
@@ -236,4 +236,105 @@ button[type="submit"]:hover {
     font-size: 0.85rem;
     color: var(--error-color);
     margin-top: 0.25rem;
+}
+
+/* Resposividade para tablets */
+@media (max-width: 1024px) {
+    .login-container {
+        max-width: 350px;
+        padding: 1.5rem;
+    }
+
+    .top-section img {
+        width: 80px;
+    }
+
+    input, button[type="submit"] {
+        font-size: 0.85rem;
+        padding: 0.65rem;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    html, body {
+        background-size: 200% 200%;
+    }
+
+    .login-container {
+        max-width: 320px;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+
+    .top-section img {
+        width: 70px;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    input {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    button[type="submit"] {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .social-login-text {
+        font-size: 0.9rem;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .text-footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsividade para telas pequenas (menores que 480px) */
+@media (max-width: 480px) {
+    .login-container {
+        max-width: 300px;
+        padding: 0.8rem;
+    }
+
+    .top-section img {
+        width: 60px;
+    }
+
+    label {
+        font-size: 0.75rem;
+    }
+
+    input {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    button[type="submit"] {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .text-footer {
+        font-size: 0.75rem;
+    }
 }
